@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.byefine/parking-guides",
+  "title": "ByeFine parking guides",
+  "description": "Free, no key: UK parking ticket guides, council PCN codes and a legal deadline calculator.",
+  "websiteUrl": "https://byefine.com/guides",
+  "repository": {
+    "url": "https://github.com/aqueelhaider-star/byefine-mcp",
+    "source": "github"
+  },
+  "version": "1.1.1",
+  "icons": [
+    {
+      "src": "https://byefine.com/logo-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://byefine.com/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://byefine.com/api/public/mcp"
+    }
+  ]
+}

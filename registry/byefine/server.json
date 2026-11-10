@@ -1,0 +1,42 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.byefine/byefine",
+  "title": "ByeFine",
+  "description": "Free UK parking ticket checks, PCN codes and deadlines, then ByeFine writes and files the appeal.",
+  "websiteUrl": "https://byefine.com/docs/api",
+  "repository": {
+    "url": "https://github.com/aqueelhaider-star/byefine-mcp",
+    "source": "github"
+  },
+  "version": "1.1.1",
+  "icons": [
+    {
+      "src": "https://byefine.com/logo-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://byefine.com/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://byefine.com/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. Bearer <your ByeFine API key>, made on your account page, for checking a notice and your own cases. The guides, codes and deadlines need no key.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
